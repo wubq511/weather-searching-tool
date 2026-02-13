@@ -1,102 +1,79 @@
-# 欢迎使用你的秒哒应用代码包
-秒哒应用链接
-    URL:https://www.miaoda.cn/projects/app-9lm7pb5f1ts1
+# 🌦️ 全国天气预报查询工具
 
-## 介绍
+一款为中国用户提供全国各城市天气查询服务的实用工具，支持查询近七天的天气预报，提供详细的天气信息和多维度的温馨提示，方便旅行者提前了解全国天气情况，合理安排出行计划。
 
-项目介绍
+##网页端
 
-## 目录结构
+https://www.miaoda.cn/projects/app-9lm7pb5f1ts1
 
-```
-├── README.md # 说明文档
-├── components.json # 组件库配置
-├── index.html # 入口文件
-├── package.json # 包管理
-├── postcss.config.js # postcss 配置
-├── public # 静态资源目录
-│   ├── favicon.png # 图标
-│   └── images # 图片资源
-├── src # 源码目录
-│   ├── App.tsx # 入口文件
-│   ├── components # 组件目录
-│   ├── contexts # 上下文目录
-│   ├── db # 数据库配置目录
-│   ├── hooks # 通用钩子函数目录
-│   ├── index.css # 全局样式
-│   ├── layout # 布局目录
-│   ├── lib # 工具库目录
-│   ├── main.tsx # 入口文件
-│   ├── routes.tsx # 路由配置
-│   ├── pages # 页面目录
-│   ├── services  # 数据库交互目录
-│   ├── types   # 类型定义目录
-├── tsconfig.app.json  # ts 前端配置文件
-├── tsconfig.json # ts 配置文件
-├── tsconfig.node.json # ts node端配置文件
-└── vite.config.ts # vite 配置文件
-```
+##移动端微信小程序
 
-## 技术栈
+weixin://dl/business/?t=JVFABdvxu9e
 
-Vite、TypeScript、React、Supabase
+## ✨ 功能特点
 
-## 本地开发
+- **🔍 智能天气查询**：支持全国各城市天气信息查询
+- **📅 七日天气预报**：提供未来七天详细天气预报
+- **📊 多维信息展示**：温度、湿度、风速、天气状况等全面信息
+- **💡 贴心生活提示**：出行建议、穿衣指南、运动适宜度等
+- **🔄 多城天气对比**：支持同时查询和对比多个城市天气
 
-### 如何在本地编辑代码？
+## 📋 功能详解
 
-您可以选择 [VSCode](https://code.visualstudio.com/Download) 或者您常用的任何 IDE 编辑器，唯一的要求是安装 Node.js 和 npm.
+### 🌤️ 天气查询
+- 支持查询中国各个城市的天气信息
+- 支持输入城市名称进行查询
 
-### 环境要求
+### 📊 天气信息展示
+- 显示近七天的天气预报
+- 包含以下天气信息：
+  - 🌡️ 温度变化趋势
+  - ☁️ 天气状况（晴、雨、雪等）
+  - 💧 湿度指数
+  - 💨 风速风向
+  - 🌫️ 空气质量指数
 
-```
-# Node.js ≥ 20
-# npm ≥ 10
-例如：
-# node -v   # v20.18.3
-# npm -v    # 10.8.2
-```
+### 💬 温馨提示
+- 🌧️ 降雨提醒：及时预报降水情况
+- 🚗 出行提示：根据天气条件提供建议
+- 👕 生活提示：穿衣、运动、护肤等生活建议
+- 🏃‍♀️ 健康提醒：特殊天气下的健康防护建议
 
-具体安装步骤如下：
+### 🔄 多地天气对比
+- 支持同时查询和对比多个城市的天气情况
+- 直观展示不同地区天气差异
+- 便于规划跨城市行程
 
-### 在 Windows 上安装 Node.js
+## 🚀 使用说明
 
-```
-# Step 1: 访问Node.js官网：https://nodejs.org/，点击下载后，会根据你的系统自动选择合适的版本（32位或64位）。
-# Step 2: 运行安装程序：下载完成后，双击运行安装程序。
-# Step 3: 完成安装：按照安装向导完成安装过程。
-# Step 4: 验证安装：在命令提示符（cmd）或IDE终端（terminal）中输入 node -v 和 npm -v 来检查 Node.js 和 npm 是否正确安装。
-```
+1. 🔍 在搜索框中输入城市名称
+2. 📅 查看当前及未来七天天气预报
+3. 💡 获取相关生活提示和建议
+4. 🔄 可添加多个城市进行天气对比
 
-### 在 macOS 上安装 Node.js
+## 🛠️ 技术架构
 
-```
-# Step 1: 使用Homebrew安装（推荐方法）：打开终端。输入命令brew install node并回车。如果尚未安装Homebrew，需要先安装Homebrew，
-可以通过在终端中运行如下命令来安装：
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-或者使用官网安装程序：访问Node.js官网。下载macOS的.pkg安装包。打开下载的.pkg文件，按照提示完成安装。
-# Step 2: 验证安装：在命令提示符（cmd）或IDE终端（terminal）中输入 node -v 和 npm -v 来检查 Node.js 和 npm 是否正确安装。
-```
+本工具采用现代Web技术构建，确保良好的用户体验和性能表现。
 
-### 安装完后按照如下步骤操作：
+## 🎯 适用场景
 
-```
-# Step 1: 下载代码包
-# Step 2: 解压代码包
-# Step 3: 用IDE打开代码包，进入代码目录
-# Step 4: IDE终端输入命令行，安装依赖：npm i
-# Step 5: IDE终端输入命令行，启动开发服务器：npm run dev -- --host 127.0.0.1
-```
+- ✈️ 出行规划：提前了解目的地天气情况
+- 🏠 生活安排：根据天气调整日常活动
+- 🌾 农业生产：参考天气信息制定种植计划
+- 🏃‍♂️ 户外活动：选择适宜的天气条件开展活动
 
-### 如何开发后端服务？
+## 📝 更新日志
 
-配置环境变量，安装相关依赖
-如需使用数据库，请使用 supabase 官方版本或自行部署开源版本的 Supabase
+- 🆕 v1.0.0 初始版本发布
+  - 实现基础天气查询功能
+  - 支持全国主要城市天气预报
+  - 提供七日天气趋势展示
 
-### 如何配置应用中的三方 API？
+## 🤝 贡献
 
-具体三方 API 调用方法，请参考帮助文档：[源码导出](https://cloud.baidu.com/doc/MIAODA/s/Xmewgmsq7)，了解更多详细内容。
+欢迎提交Issue和Pull Request来改进此工具。
 
-## 了解更多
+## 📄 许可证
 
-您也可以查看帮助文档：[源码导出](https://cloud.baidu.com/doc/MIAODA/s/Xmewgmsq7)，了解更多详细内容。
+MIT License
+
